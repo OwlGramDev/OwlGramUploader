@@ -16,6 +16,7 @@ var (
 	SshPassword     string
 	SshFolderOutput string
 	PublisherToken  string
+	JavaPath        string
 )
 
 func LoadEnv() {
@@ -31,4 +32,5 @@ func LoadEnv() {
 	SshUser = os.Getenv("SSH_USER")
 	SshPassword = os.Getenv("SSH_PASSWORD")
 	SshFolderOutput = os.Getenv("SSH_FOLDER_OUTPUT")
+	JavaPath = os.Getenv("JAVA_PATH")
 }
